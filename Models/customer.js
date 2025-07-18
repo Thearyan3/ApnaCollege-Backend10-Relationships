@@ -64,7 +64,12 @@ const addCust = async() => {
     console.log("Added New Customer");
 }
 
-addCust();
+const delCust = async() => {
+    let data = await Customer.findByIdAndDelete('687a8caad0af9ef9d595e8f2');
+    console.log(data);
+}
+delCust();
+// addCust();
 
 // const addOrders = async ()=> {
 //     let res = await Order.insertMany([
