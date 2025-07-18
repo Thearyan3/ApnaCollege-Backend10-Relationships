@@ -52,3 +52,4 @@ getData();
 //     console.log(del1);
 // }
 // del();
+
