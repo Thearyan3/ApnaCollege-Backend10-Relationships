@@ -45,11 +45,11 @@ const getData = async() => {
     let result = await Post.findOne({}).populate("user","username");
     console.log(result);
 }
-getData();
+// getData();
 
-// const del = async() => {
-//     let del1 = await Post.findOneAndDelete({content: "Bye Bye"});
-//     console.log(del1);
-// }
-// del();
+const del = async() => {
+    let del1 = await User.findByIdAndDelete('687a8250dcca413e54c94fd5');
+    console.log(del1);
+}
+del();
 
